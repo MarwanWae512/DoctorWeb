@@ -1,0 +1,233 @@
+body{
+    height: 98vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #7d7d7d70;
+}
+.back{
+    width:75%;
+    height:70%;
+    background-color: rgb(255, 255, 255,0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0px 1px 14px 0px gray;
+}
+.logo{
+    margin-top: 50px;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phone,.pass{
+    border: none;
+    border-bottom: 1px solid #26457b;
+    background-color: transparent;
+    width:500px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: #26457b;
+    outline: none;
+}
+.phone:hover{
+    border-color: white;
+}
+.pass:hover{
+    border-color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+.inputs input::placeholder{
+    color: rgb(180, 180, 180);
+    font-size: 18px;
+    position: relative;
+    left: -100px;
+    font-weight: 100;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:500px;
+    position: relative;
+    top:30px;
+}
+.sig a{
+    text-decoration: none;
+    color: #26457b;
+    font-size: 30px;
+}
+.sig a p{
+    margin:none;
+    margin-top:15px;
+}
+.sig{
+    border:1px solid #26457b;
+    width:199px ;
+    height: 69px;
+    border-radius: 20px;
+    text-align: center;
+}
+.sig a:hover{
+    text-decoration: underline;
+}
+.logg{
+    background-color: #26457b;
+    color: white;
+    width:199px ;
+    height: 69px;
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
+}
+.or{
+    color: #26457b;
+    position: relative;
+    top:20px;
+}
+.logo1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:50px;
+    align-self: flex-start;
+}
+@media(max-width:760px){
+    .phone , .pass{
+        width:400px;
+    }
+    .btns{
+        width:462px;
+        top:12px;
+    }
+    .sig,.logg{
+        width:165px;
+        height: 59px;
+    }
+}
+@media(max-width:650px){
+    .logo svg{
+        width: 350px;
+        height: 150px;
+        margin-left: -100px;
+    }
+    .btns{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .sig,.logg{
+        width:400px;
+        height: 59px;
+    }
+}
+@media(max-width: 600px){
+    .sig,.logg{
+        width:300px;
+        height: 59px;
+    }
+    .phone , .pass{
+        width:300px;
+    }
+    .inputs input::placeholder{
+        color: rgb(180, 180, 180);
+        font-size: 18px;
+        position: relative;
+        left: 10px;
+        font-weight: 100;
+    }
+}
+@media(max-width:500px){
+    .sig,.logg{
+        width:250px;
+        height: 59px;
+    }
+    .phone , .pass{
+        width:250px;
+    }
+    .inputs input::placeholder{
+        color: rgb(180, 180, 180);
+        font-size: 15px;
+        position: relative;
+        left: 8px;
+        font-weight: 100;
+    }
+    .logo svg{
+        width: 300px;
+        height: 100px;
+        margin-left: 20px;
+    }
+    .back{
+        gap:50px;
+    }
+}
+@media (max-width:400px) {
+    .sig,.logg{
+        width:200px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .sig a p{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .phone , .pass{
+        width:200px;
+    }
+    .inputs input::placeholder{
+        color: rgb(180, 180, 180);
+        font-size: 15px;
+        position: relative;
+        left: 8px;
+        font-weight: 100;
+    }
+    .logo svg{
+        width: 200px;
+        height: 70px;
+        margin-left: 20px;
+    }
+    .back{
+        gap:60px;
+    }
+}
+@media (max-width:350px){
+    .sig,.logg{
+        width:150px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .sig a p{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .phone , .pass{
+        width:150px;
+    }
+    .inputs input::placeholder{
+        color: rgb(180, 180, 180);
+        font-size: 15px;
+        position: relative;
+        left: 8px;
+        font-weight: 100;
+    }
+    .logo svg{
+        width: 200px;
+        height: 70px;
+        margin-left: 20px;
+    }
+    .back{
+        gap:40px;
+    }
+}
